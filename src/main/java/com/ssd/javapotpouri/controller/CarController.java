@@ -25,7 +25,6 @@ public class CarController {
         BaseCar car = builder.getResult();
         System.out.println("Car built:\n" + car.getCarType());
 
-
         CarManualBuilder manualBuilder = new CarManualBuilder();
 
         // Director may know several building recipes.
