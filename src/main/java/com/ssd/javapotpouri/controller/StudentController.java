@@ -24,11 +24,7 @@ public class StudentController {
     public String getStudentsJson() {
         try {
             return completableFutureDemo.demo();
-        } catch (ExecutionException e) {
-            throw new RuntimeException(e);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        } catch (JsonProcessingException e) {
+        } catch (ExecutionException | InterruptedException | JsonProcessingException e) {
             throw new RuntimeException(e);
         }
     }
